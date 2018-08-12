@@ -33,7 +33,7 @@
           <div><a href="#Study-Experience" class="item-button"><i class=" fa fa-bar-chart-o">&emsp;</i>Experience</a></div>
           </div>
       </div>
-      <div>
+      <div id="menu">
         <button class="openmenu" onclick="w3_open()"><i class="fa fa-bars"></i></button>
       </div>
     </div>
@@ -227,9 +227,11 @@
 <script>
     function w3_open() {
     document.getElementById("mySidebar").style.display = "block";
+    document.getElementById("menu").style.display = "none";
 }
     function w3_close() {
     document.getElementById("mySidebar").style.display = "none";
+    document.getElementById("menu").style.display = "block";
 }
 </script>
 <script>
