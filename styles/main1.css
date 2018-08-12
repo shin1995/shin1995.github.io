@@ -40,7 +40,7 @@
 
 .cc-profile-image a:before {
   content: "";
-  border: 15px solid rgba(55, 140, 63, 0.6);
+  border: 15px solid #98c4e5;
   border-radius: 50%;
   height: 180px;
   width: 180px;
@@ -56,7 +56,7 @@
 .imagecover{
   background-image: url(images/hd1.jpg);
   width: 100%;
-  height: 550px;
+  height: 800px;
   background-size: cover;
   background-position: center center;
   
@@ -69,7 +69,7 @@
   padding: 0;
   margin: 0;
   border: 15px solid transparent;
-  z-index: 9999;
+  z-index: 99;
   -webkit-transition: all .3s ease-out;
   transition: all .3s ease-out;
 }
@@ -86,20 +86,18 @@
 .btn-round {
   border-width: 1px;
   border-radius: 30px !important;
-  background-color: #888;
   color: white;
   width: 50px;
   height: 50px;
 }
 .button-container{
   text-align: center;
-  font-size: 25px;
-  margin-top: -25px;
+  font-size: 28px;
+  margin-top: 50px;
 }
 .h2-title{
   text-align: center;
   color: #ffffff;
-  margin-top: 35px;
   font-family: inherit;
   font-weight:550;
   font-size: 25px;
@@ -110,7 +108,7 @@
     right: 0px;
     margin: 0px auto;
     position: absolute;
-    top: 20%;
+    top: 30%;
 }
 .around-basic-infor{
   opacity: 0.9;
@@ -141,7 +139,7 @@
   padding-bottom: 0px;
 }
 .bg-primary {
-    background-color: #378C3F !important;
+    background-color: #3387ca !important;
 }
 .title{
   text-align: center;
@@ -154,4 +152,53 @@
 }
 .liststyle{
   opacity: 0.7;
+}
+#under{
+  text-decoration: underline;
+}
+.hearul{
+  width: 70%;
+  margin: 45px auto 24px auto;
+  border-color: #2F2D2E;
+  border-color: rgb(186, 226, 233);
+}
+.h2name{
+  font: 50px 'opensans-bold', sans-serif;
+  color: #fff;
+  letter-spacing: -2px;
+  font-weight: 700;
+}
+#imagecover{
+  padding: 0px;
+}
+.navfix{
+      position: fixed;
+    z-index: 100;
+    margin-top: 100px;
+}
+.openmenu{
+  font-size: 30px;
+  background-color: black;
+  border:none;
+  color: white;
+  border-bottom-right-radius:5px;
+  border-top-right-radius:5px;
+  opacity: 0.7;
+}
+.w3-sidebar{
+  opacity: 0.8;
+  height: 500px!important;
+}
+.item-button{
+  margin-left: 15px;
+}
+.content-menu{
+  line-height: 40px;
+}
+.menurul{
+  padding: 0px;
+  margin: 0px;
+  border-color: black;
+  
+  opacity: 1;
 }

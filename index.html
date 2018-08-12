@@ -9,29 +9,56 @@
     <link href="css/aos.css" rel="stylesheet">
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="styles/main1.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <script src="js/aos.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
   </head>
   <body>
-      <script>AOS.init({duration: 2500,})</script>
+   
+    <div class="navfix">
+      <div class="w3-sidebar w3-bar-block w3-dark-grey w3-animate-left" style="display:none" id="mySidebar">
+        <button class="w3-bar-item w3-button w3-large"
+         onclick="w3_close()">Close<i class="fa fa-bars" style="float: right; margin-top: 5px"></i></button>
+         <div class="content-menu">
+          <hr class="menurul">
+          <div><a href="#imagecover" class="item-button"><i class="fa fa-home">&emsp;</i>Home</a></div>
+          <hr class="menurul">
+          <div><a href="#about" class="item-button"><i class="fa fa-user">&emsp;</i>About</a></div>
+           <hr class="menurul">
+          <div><a href="#Education" class="item-button"><i class="fa fa-book">&emsp;</i>Education</a></div>
+           <hr class="menurul">
+          <div><a href="#Professional-Skills" class="item-button"><i class="fa fa-signal">&emsp;</i>Skills</a></div>
+            <hr class="menurul">
+          </div>
+      </div>
+      <div>
+        <button class="openmenu" onclick="w3_open()"><i class="fa fa-bars"></i></button>
+      </div>
+    </div>
     <!-- cover image -->
-      <div class="container-fluid">
+    <div class="container-fluid">
+        <div class="section" id="imagecover">   
           <div class="imagecover">
               <div class="container-center">
                 <div class="cc-profile-image"><a href="#"><img src="images/2.1.jpg" alt="Image"/></a></div>
-                <div class="h2-title"><h2>Bui Minh Thai</h2><p>Web Developer</p></div>
+                <div class="h2-title"><h2 class="h2name">Bui Minh Thai</h2><p>Web Developer</p><hr class="hearul"></div>
+              <div class="button-container">
+                  <a class="btn btn-default btn-round btn-lg btn-icon" href="#" rel="tooltip" title="Follow me on Skype"><i class="fa fa-skype"></i>
+                  <a class="btn btn-default btn-round btn-lg btn-icon" href="#" rel="tooltip" title="Follow me on Facebook"><i class="fa fa-facebook"></i>
+                  </a>
+                  <a class="btn btn-default btn-round btn-lg btn-icon" href="#" rel="tooltip" title="Follow me on Twitter"><i class="fa fa-twitter"></i>
+                  </a>
+                  <a class="btn btn-default btn-round btn-lg btn-icon" href="#" rel="tooltip" title="Follow me on GitHub"><i class="fa fa-github"></i>
+                  </a>
+                  <a class="btn btn-default btn-round btn-lg btn-icon" href="#" rel="tooltip" title="Follow me on Instagram"><i class="fa fa-instagram"></i>
+                  </a>
+              </div>
               </div>
           </div>
-          <div class="button-container">
-              <a class="btn btn-default btn-round btn-lg btn-icon" href="#" rel="tooltip" title="Follow me on Facebook"><i class="fa fa-facebook"></i>
-              </a>
-              <a class="btn btn-default btn-round btn-lg btn-icon" href="#" rel="tooltip" title="Follow me on Twitter"><i class="fa fa-twitter"></i>
-              </a>
-              <a class="btn btn-default btn-round btn-lg btn-icon" href="#" rel="tooltip" title="Follow me on Google+"><i class="fa fa-google-plus"></i>
-              </a>
-              <a class="btn btn-default btn-round btn-lg btn-icon" href="#" rel="tooltip" title="Follow me on Instagram"><i class="fa fa-instagram"></i>
-              </a>
-          </div>
       </div>
+    </div>
+
       <!-- End cover image -->
       <!-- Phan About -->
       <div class="section" id="about">
@@ -162,7 +189,7 @@
         </div>
         <div class="col-md-9" data-aos="fade-left" data-aos-offset="50" data-aos-duration="1500">
           <div class="card-body">
-            <div class="h5">INFORMATION SECURITY RISK MANAGEMENT IN THE ENTERPRISE</div>
+            <div class="h5" id="under">INFORMATION SECURITY RISK MANAGEMENT IN THE ENTERPRISE</div>
             <ul class="liststyle">
               <li>Evaluate information security risks</li>
               <li>Analyze the system design to minimize the risk of information security.</li>
@@ -184,10 +211,10 @@
         </div>
         <div class="col-md-9" data-aos="fade-left" data-aos-offset="50" data-aos-duration="1500">
           <div class="card-body">
-            <div class="h5">ECOMMERCE WEBSITE DESIGN</div>
+            <div class="h5" id="under">ECOMMERCE WEBSITE DESIGN</div>
             <ul class="liststyle">
               <li>Use Django framework to write a website selling Watch.</li>
-              <li>Website interface design with HTML5/CSS3</li>
+              <li>Website interface design with HTML5/CSS3 Bootstrap.</li>
             </ul>
           </div>
         </div>
@@ -195,6 +222,26 @@
     </div>
   </div>
   </div>
+  <script>AOS.init({duration: 2500,})</script>
+<script>
+    function w3_open() {
+    document.getElementById("mySidebar").style.display = "block";
+}
+    function w3_close() {
+    document.getElementById("mySidebar").style.display = "none";
+}
+</script>
+<script>
+    $(document).ready(function() {
+    $("a[href*='#']:not([href='#])").click(function() {
+    let target = $(this).attr("href");
+    $('html,body').stop().animate({
+      scrollTop: $(target).offset().top
+    }, 1000);
+    event.preventDefault();
+    });
+});
+</script>
 </body>
 </html>
 
