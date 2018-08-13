@@ -191,6 +191,7 @@
 }
 .item-button{
   margin-left: 15px;
+  color: white;
 }
 .content-menu{
   line-height: 40px;
@@ -199,6 +200,25 @@
   padding: 0px;
   margin: 0px;
   border-color: black;
-  
   opacity: 1;
+}
+.cv{
+  text-align: center;
+
+}
+.cv a:hover{
+  text-decoration: none;
+  color: black;
+  background-color: grey;
+}
+.dowloadcv{
+  border: 1px solid grey;
+  border-radius: 4px;
+  padding: 5px;
+  color: white;
+  background-color: #96b7bd;
+  font-weight: 600;
+}
+.mc{
+  padding-left: 5px;
 }
