@@ -197,8 +197,9 @@
   padding: 0px;
 }
 .navfix{
-      position: fixed;
+    position: fixed;
     z-index: 100;
+    padding-top: 60px;
     
 }
 .openmenu{
